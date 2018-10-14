@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+
+$(document).ready(function(){
+        $("#hide").click(function(){
+       // $("p").hide();
+        $("p").hide(1500);
+    });
+    $("#show").click(function(){
+        //$("p").show();
+        $("p").show("fast");
+    });
+});
+    </script>
+</head>
+<body>
+    <p>
+        <br> It is an optional parameter. <span>It specifies the speed of the delay</span>.Its possible vales are slow, fast and milliseconds.<br>
+
+        <br>It specifies the easing function to be used for transition.<br>
+
+        It is also an optional parameter. It specifies the function to be called after completion of hide() effect.<br>
+    </p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+</body>
+</html>  
